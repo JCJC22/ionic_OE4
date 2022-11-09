@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ADD STUDENT
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/b6/27/1d/b6271d0a78fc67389c67eb1031e5c3a4.jpg" />
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating"> Student Number</ion-label>
+      <ion-input [(ngModel)] = "student_no" type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating"> Student Name</ion-label>
+      <ion-input [(ngModel)] = "student_name" type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating"> Email</ion-label>
+      <ion-input [(ngModel)] = "email" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> Contact No.</ion-label>
+      <ion-input [(ngModel)] = "contact_no" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> Address</ion-label>
+      <ion-input [(ngModel)] = "address" type="text"></ion-input>
+    </ion-item>
+  
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="addStudent()" fill="outline">Add Student</ion-button>
+      </ion-col>
+    </ion-row>
+  
+  </ion-list>
+</ion-content>
